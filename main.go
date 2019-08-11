@@ -1,11 +1,13 @@
 package main
 
 import (
-	router "github.com/anant-sharma/go-boilerplate/routes"
+	eventslistener "github.com/anant-sharma/go-blockchain-events/controller/v1/events-listener"
+	"github.com/anant-sharma/go-blockchain-events/models"
 )
 
 func main() {
 
-	router.InitRouter()
+	models.InitModels()
+	eventslistener.InitListening()
 
 }
